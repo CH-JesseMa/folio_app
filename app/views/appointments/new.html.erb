@@ -1,14 +1,16 @@
-*New Appointment*
+<h1>Create Appointment</h1>
 
-<%= form_for :article do |f| %>
+<%= form_for :appointment, url: user_appointments_path do |f| %>
+
   <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <%= f.label :appointment_time %><br>
+
+    <%= f.datetime_select :appointment_time, :ampm => true, :minute_step => 15 %>
   </p>
 
   <p>
-    <%= f.label :text %><br>
-    <%= f.text_area :text %>
+    <%= f.label :appointment_duration %><br>
+    <%= f.minute_select(:appointment_duration) %>
   </p>
 
   <p>

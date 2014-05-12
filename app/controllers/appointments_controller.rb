@@ -13,11 +13,8 @@ class AppointmentsController < ApplicationController
 
   def create
      @appointment = Appointment.new(appointment_params)
-    if @appointment.save
-      redirect_to @appointment
-    else
-      render 'new'
-    end
+     @appointment.save
+     redirect_to root_path
   end
 
   def edit
@@ -32,7 +29,8 @@ class AppointmentsController < ApplicationController
       :client_name,
       :client_mobile,
       :appointment_duration,
-      :appointment_location))
+      :appointment_location,
+      :appt_status))
     end
   end
 
@@ -53,5 +51,6 @@ private
       :client_name,
       :client_mobile,
       :appointment_duration,
-      :appointment_location)
+      :appointment_location,
+      :appt_status)
   end
