@@ -10,6 +10,8 @@ https://www.pivotaltracker.com/projects/1077244
 
 ## ERD
 
+https://dl.dropboxusercontent.com/u/23267694/erd.pdf
+
 ## Tech
 Ruby on Rails
 jQuery/vanilla JS
