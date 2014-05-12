@@ -8,36 +8,7 @@
 
 https://www.pivotaltracker.com/projects/1077244
 
-## Models
-
-User:
-  has_many articles
-  has_many appointments
-
-  first_name:string
-  last_name:string
-  email:string
-  twitter_url:string
-  facebook_url:string
-  profile_image:string
-  session_rate:integer
-
-Article
-
-  title:string
-  content:text
-
-Appointments
-  belongs_to user
-
-  day: string
-  start_time:string(?)
-  end_time:
-  session_length:
-  date:string(?)
-  client_name:string
-  client_email:string
-  client_location:string
+## ERD
 
 ## Tech
 Ruby on Rails
