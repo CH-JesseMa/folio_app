@@ -19,6 +19,24 @@
   <div><%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i><br />
     <%= f.password_field :current_password, autocomplete: "off" %></div>
 
+  <div><%= f.label :first_name %><br />
+  <%= f.text_field :first_name %></div>
+
+  <div><%= f.label :last_name %><br />
+  <%= f.text_field :last_name %></div>
+
+  <div><%= f.label :profile_url %><br />
+  <%= f.text_field :profile_url %></div>
+
+  <div><%= f.label :twitter_url %><br />
+  <%= f.text_field :twitter_url %></div>
+
+  <div><%= f.label :facebook_url %><br />
+  <%= f.text_field :facebook_url %></div>
+
+  <div><%= f.label :location %><br />
+  <%= f.text_field :location %></div>
+
   <div><%= f.submit "Update" %></div>
 <% end %>
 

@@ -9,18 +9,24 @@
 <body>
  <p class="notice"><%= notice %></p>
  <p class="alert"><%= alert %></p>
-  <header>header
+  <header>Logo App/Name Will Go Here
     <%= link_to "Register", new_user_registration_path %>
     <%= link_to "Login", new_user_session_path %>
     <%= link_to "Logout", destroy_user_session_path, :method => :delete %>
   </header>
+
   <div id='main'>
+
     <article>
       <%= yield %>
     </article>
+
     <nav>nav</nav>
+
     <aside>aside</aside>
+
   </div>
-  <footer>footer</footer>
+
+  <footer>Folio App (c) 2014 - Made with love and care by Jesse Ma - All rights reserved.</footer>
 </body>
 </html>
