@@ -30,6 +30,7 @@ Post
 Appointments
   belongs_to user
 
+  day: string
   start_time:string(?)
   end_time:
   session_length:
