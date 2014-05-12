@@ -3,14 +3,38 @@
 <%= form_for :appointment, url: user_appointments_path do |f| %>
 
   <p>
-    <%= f.label :appointment_time %><br>
-
-    <%= f.datetime_select :appointment_time, :ampm => true, :minute_step => 15 %>
+    <%= f.label :appointment_start %><br>
+    <%= f.datetime_select :appointment_start, :ampm => true, :minute_step => 15 %>
   </p>
 
   <p>
-    <%= f.label :appointment_duration %><br>
-    <%= f.minute_select(:appointment_duration) %>
+    <%= f.label :appointment_end %><br>
+    <%= f.datetime_select :appointment_end, :ampm => true, :minute_step => 15 %>
+  </p>
+
+  <p>
+    <%= f.label :client_name %><br>
+    <%= f.text_field :client_name %>
+  </p>
+
+  <p>
+    <%= f.label :client_email %><br>
+    <%= f.text_field :client_email %>
+  </p>
+
+  <p>
+    <%= f.label :client_mobile %><br>
+    <%= f.text_field :client_mobile %>
+  </p>
+
+  <p>
+    <%= f.label :appointment_location %><br>
+    <%= f.text_field :appointment_location %>
+  </p>
+
+  <p>
+    <%= f.label :appt_status %><br>
+    <%= f.select(:appt_status, [['Open', true], ['Reserved', false]]) %>
   </p>
 
   <p>

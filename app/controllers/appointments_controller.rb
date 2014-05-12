@@ -24,7 +24,8 @@ class AppointmentsController < ApplicationController
   def update
     @appointment = Appointment.find(params[:id])
     if @appointment.update(params[:appointment].permit(
-      :appointment_time,
+      :appointment_start,
+      :appointment_end,
       :client_email,
       :client_name,
       :client_mobile,
@@ -46,7 +47,8 @@ private
 
   def appointment_params
     params.require(:appointment).permit(
-      :appointment_time,
+      :appointment_start,
+      :appointment_end,
       :client_email,
       :client_name,
       :client_mobile,
