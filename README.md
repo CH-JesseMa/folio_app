@@ -11,7 +11,7 @@ https://www.pivotaltracker.com/projects/1077244
 ## Models
 
 User:
-  has_many posts
+  has_many articles
   has_many appointments
 
   first_name:string
@@ -22,7 +22,7 @@ User:
   profile_image:string
   session_rate:integer
 
-Post
+Article
 
   title:string
   content:text
